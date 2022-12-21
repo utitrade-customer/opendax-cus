@@ -1,0 +1,21 @@
+env: production
+port: 4000
+logs:
+  level: 'silly'
+
+path_prefix: '/api'
+
+database:
+  user: <%= @config['database']['user'] %>
+  password: <%= @config['database']['password'] %>
+  host: '<%= @config['database']['host'] %>'
+  port: <%= @config['database']['port'] %>
+  dialect: mysql
+
+barong:
+  jwt_public_key: <%= @barong_public_key %>
+
+vault:
+  address: 'http://vault:8200'
+  token: <%= @config['vault']['token'] %>
+  app_name: <%= @config['app']['name'].downcase %>

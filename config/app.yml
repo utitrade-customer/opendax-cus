@@ -1,0 +1,116 @@
+---
+app:
+  name: domain
+  domain: domain.com
+  subdomain: www
+render_protect: true
+csrfEnabled: true
+ssl:
+  enabled: true
+  email: hello@domain.com
+images:
+  peatio: lukutex/peatio-26-new:tron-3
+  barong: lukutex/barong-new:start
+  frontend: UI-docker-image
+  tower: quay.io/openware/tower:2.6.81
+  dashboard: Dashboard-docker-image
+  rango: quay.io/openware/rango:2.6.1
+finex:
+  enabled: false
+  image: quay.io/openware/finex:2.6.0
+  license_key: changeme
+kyc:
+  provider: local
+  authorization_token: changeme
+  sandbox_mode: true
+  api_endpoint: https://api.kycaid.com/
+vault:
+  token: s.nQgRTrsPEceCUjUEqvskTa65
+database:
+  host: ip_mysql
+  adapter: mysql
+  port: 3306
+  user: root
+  password: Password
+storage:
+  provider: Google
+  bucketName: opendax-barong-docs-bucket
+  region: fra1
+  endpoint: https://fra1.digitaloceanspaces.com
+  accessKey: changeme
+  secretKey: changeme
+  signatureVersion: '2'
+twilio:
+  enabled: false
+  phone_number: '+15005550000'
+  account_sid: changeme
+  auth_token: changeme
+gaTrackerKey: G-1GKC46VDXT
+captcha:
+  type: none
+  siteKey: 6Ldkj24aAAAAAJnsbbgr-LHpe8uwPwINKi9BicTW
+  secretKey: 6Ldkj24aAAAAAAZIGOoXgH0NewaY4q2-DljbK_41
+smtp:
+  host: smtp-relay.sendinblue.com
+  port: 587
+  user: user
+  password: Password
+  sender_email: no-rely@domain.com
+  sender_name: domain Exchange
+wallets:
+  eth:
+    - kind: deposit
+      address: changeme
+      max_balance: 0.0
+      secret: changeme
+    - kind: hot
+      address: changeme
+      max_balance: 100.0
+      secret: changeme
+    - kind: warm
+      address: changeme
+      max_balance: 1000.0
+      secret: changeme
+  btc:
+    - kind: deposit
+      address: changeme
+      max_balance: 0.0
+    - kind: hot
+      address: changeme
+      max_balance: 100.0
+    - kind: warm
+      address: changeme
+      max_balance: 1000.0
+parity:
+  network: testnet
+  address: parity
+  rpcport: 8545
+  port: 30303
+bitcoind:
+  enabled: false
+  rpcuser: admin
+  rpcpassword: changeme
+  address: bitcoind
+  network: testnet
+  rpcport: 18332
+  port: 18333
+litecoind:
+  rpcuser: admin
+  rpcpassword: changeme
+  address: litecoind
+  network: testnet
+  rpcport: 19332
+  port: 19335
+terraform:
+  credentials: '~/safe/opendax.json'
+  project: example-opendax
+  region: europe-west4
+  zone: europe-west4-a
+  instance_name: opendax-cloud
+  machine_type: n1-standard-4
+  image: debian-cloud/debian-9
+space_digital:
+  end_point: changeme
+  access_key: changeme
+  secret_key: changeme
+  bucket_name: changeme

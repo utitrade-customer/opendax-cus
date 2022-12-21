@@ -1,0 +1,59 @@
+keychain:
+  applogic:
+    algorithm: RS256
+    value: <%= @applogic_public_key %>
+  sunshine:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  airdrop:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  ieo:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  stake:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  wallet:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  referral:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  competition:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  profit:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  holder:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  transaction:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  statistic:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  newKyc:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  banner:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  withdrawLimit:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  paypal:
+    algorithm: RS256
+    value: <%= @barong_public_key %> 
+  announcement:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+  event:
+    algorithm: RS256
+    value: <%= @barong_public_key %>
+scopes:
+  read_users:
+    mandatory_signers: ["applogic","sunshine", "airdrop", "ieo", "stake", "wallet", "referral","competition", "holder", "transaction", "statistic", "newKyc", "banner","withdrawLimit", "paypal", "announcement","profit","event"]
+    permitted_signers: ["applogic","sunshine", "airdrop", "ieo", "stake", "wallet", "referral","competition", "holder", "transaction", "statistic", "newKyc", "banner","withdrawLimit", "paypal", "announcement","profit","event"]

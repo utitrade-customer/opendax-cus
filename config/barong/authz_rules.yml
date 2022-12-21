@@ -1,0 +1,32 @@
+#
+# pass for whitelisted (public) routes
+# block for blacklisted routes
+#
+rules:
+  pass:
+    - api/v2/barong/public
+    - api/v2/barong/identity
+    - api/v2/trade/public
+    - api/v2/ranger/public
+    - api/v2/applogic/public
+    - api/v2/sunshine/public
+    - api/v2/airdrop/public
+    - api/v2/ieo/public
+    - api/v2/stake/public
+    - api/v2/wallet/public
+    - api/v2/referral/public
+    - api/v2/competition/public
+    - api/v2/holder/public
+    - api/v2/newKyc/public
+    - api/v2/transaction/public
+    - api/v2/statistic/public
+    - api/v2/banner/public
+    - api/v2/paypal/public
+    - api/v2/announcement/public
+    - api/v2/withdrawLimit/public
+    - api/v2/arke/public
+    - api/v2/profit/public
+    - api/v2/event/public
+  block:
+    - api/v2/barong/management
+    - api/v2/trade/management
