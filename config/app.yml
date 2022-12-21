@@ -13,7 +13,7 @@ images:
   barong: lukutex/barong-new:start
   frontend: UI-docker-image
   tower: quay.io/openware/tower:2.6.81
-  dashboard: Dashboard-docker-image
+  dashboard: lukutex/dashboard-cus:ver-1
   rango: quay.io/openware/rango:2.6.1
 finex:
   enabled: false
