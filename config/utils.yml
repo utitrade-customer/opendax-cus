@@ -4,19 +4,19 @@ images:
   airdrop: lukutex/airdrop:v11
   ieo: lukutex/ieo:version-1-8
   stake: lukutex/stake:stake-BE-v-1
-  wallet: lukutex/wallet-api:wallet-api-v11
-  referral: lukutex/refferal:v3
+  wallet: lukutex/wallet-api:wallet-api-v12
+  referral: lukutex/refferal:v5
   competition: lukutex/competition-backend:v4
   holder: phuoc:holder-backend-api
   transaction: lukutex/transaction:transaction-v-4
   statistic: lukutex/getuser:v2
-  newKyc: lukutex/kyc-backend:kyc-12
-  withdrawLimit: lukutex/withdraw-limit-api:v-1-1
+  newKyc: lukutex/kyc-backend:kyc-19
+  withdrawLimit: lukutex/withdraw-limit-api:have-paypal-2
   banner: lukutex/banner-backend:banner-v-1
-  paypal: lukutex/paypal-backend:paypal-v-1
-  announcement: lukutex/announcement-backend:announcement-v-1
-  profit: lukutex/profit-backend:profit-v-1
-  event: lukutex/event-backend:event-v-1
+  paypal: nasadax/api-paypal:release-2
+  announcement: lukutex/annoucement:v6-banner
+  profit: lukutex/api-profit:profit-6
+  event: nasadax/event:release-10
 superset:
   email: superset-admin@openware.com
   username: admin
