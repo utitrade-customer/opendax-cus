@@ -7,6 +7,8 @@ rules:
     - api/v2/barong/public
     - api/v2/barong/identity
     - api/v2/trade/public
+    - api/v2/trade/coinmarketcap
+    - api/v2/trade/coingecko
     - api/v2/ranger/public
     - api/v2/applogic/public
     - api/v2/sunshine/public
@@ -24,9 +26,9 @@ rules:
     - api/v2/paypal/public
     - api/v2/announcement/public
     - api/v2/withdrawLimit/public
+    - api/v2/listing/public
     - api/v2/arke/public
     - api/v2/profit/public
-    - api/v2/event/public
   block:
     - api/v2/barong/management
     - api/v2/trade/management
